@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+
+	<!-- CSS -->
+	<link href="./css/style.css" rel="stylesheet">
+
+<body>
+</head>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+   	<h1>Bus Driver Management</h1>
+  	<p>Hibernate & Spring (Kiều Mạnh Quân)</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">LOGO</i></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Trang Chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="driver_table.html">Bảng Nhân Viên</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="route_table.html">Bảng Tuyến Xe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="driver_management.html">Bảng Phân Công</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+        <button class="btn btn-primary" type="button">Tìm Kiếm</button>
+      </form>
+    </div>
+  </div>
+</nav>
+	
+<div class="container mt-3 text-center">   
+	<h2>Bảng Lái Xe</h2>
+  	<p>Quản Lý Nhân Viên Lái Xe</p>  
+  	<div id="overflowTest">
+  		<table class="table table-striped">
+	   	<thead>
+	      <tr>
+	        <th>ID Lái Xe</th>
+	        <th>Họ Tên</th>
+	        <th>Địa Chỉ</th>
+	        <th>Điện Thoại</th>
+	        <th>Trình Độ</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>10000</td>
+	        <td>Nguyễn Văn A</td>
+	        <td>Đà Nẵng</td>
+	        <td>+84*********</td>
+	        <td>B</td>
+	      </tr>
+	      <tr>
+	        <td>10001</td>
+	        <td>Nguyễn Văn B</td>
+	        <td>Hồ Chí Minh</td>
+	        <td>+84*********</td>
+	        <td>B</td>
+	      </tr>
+	      <tr>
+	        <td>10002</td>
+	        <td>Kiều Mạnh Quân</td>
+	        <td>Hà Nội</td>
+	        <td>+84947826498</td>
+	        <td>A</td>
+	      </tr>
+	    </tbody>
+  	</table>
+  	</div>
+ 	<div class="mt-5  ">
+ 		<a href="driver_table.html" class="btn btn-primary">Quản Lý Bảng Lái Xe</a>
+ 	</div>
+</div>
+
+<hr class="mt-5">
+
+<div class="container mt-2 text-center">
+	<h2>Bảng Tuyến Đường</h2>
+  	<p>Quản Lý Tuyến Đường</p>   
+  	<div id="overflowTest">
+  		<table class="table table-striped">
+	   	<thead>
+	      <tr>
+	        <th>ID Tuyến Đường</th>
+	        <th>Khoảng Cách(Km)</th>
+	        <th>Số Điểm Dừng</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>100</td>
+	        <td>257</td>
+	        <td>5</td>
+	      </tr>
+	      <tr>
+	        <td>101</td>
+	        <td>100</td>
+	        <td>1</td>
+	      </tr>
+	      <tr>
+	        <td>102</td>
+	        <td>300</td>
+	        <td>5</td>
+	      </tr>
+	    </tbody>
+  	</table>
+  	</div> 
+  	<div class="mt-5  ">
+ 		<a href="route_table.html" class="btn btn-primary">Quản Lý Bảng Tuyến Đường</a>
+ 	</div> 
+ 	
+</div>
+
+  
+<div class="container-fluid mt-5 bg-primary text-white text-center">
+  <div class="row">
+    <div class="col-sm-4 mt-5 mb-5">
+      <h3>Bảng Lái Xe</h3>
+      <p>Thêm / Sửa / Xóa / Tìm Kiếm.</p>
+    </div>
+    <div class="col-sm-4 mt-5 mb-5">
+      <h3>Bảng Tuyến Đường</h3>
+      <p>Thêm / Sửa / Xóa / Tìm Kiếm.</p>
+    </div>
+    <div class="col-sm-4 mt-5 mb-5">
+      <h3>Bảng Phân Công</h3>        
+      <p>Thêm / Sửa / Xóa / Tìm Kiếm.</p>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+  <script src="./assets/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
